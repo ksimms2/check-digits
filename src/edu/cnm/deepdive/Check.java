@@ -8,8 +8,8 @@ public class Check {
   public static int digitSum(int var) {
     String str;
     int result = 0;
-
-    str = Integer.toString(var);
+    int noNeg = Math.abs(var);
+    str = Integer.toString(noNeg);
     for(int i = 0; i < str.length(); i++ ){
       result += str.charAt(i) - 48;
     }
@@ -23,11 +23,12 @@ public class Check {
 
     System.out.println("Enter number: ");
     int var = scanner.nextInt();
-    Check.digitSum(var);
-    System.out.println("Enter number: " + var);
-    System.out.println("Divide by 9 to get a remainder of " + (var  % 9));
-    System.out.println("Run digitSum method: " + digitSum(var));
-    System.out.println("Divide digitSum by 9 to get a remainder of " + digitSum(var) % 9);
+    int noNeg = Math.abs(var);
+    Check.digitSum(noNeg);
+    System.out.println("A little positivity makes a new number: " + noNeg);
+    System.out.println("Divide by 9 to get a remainder of " + (noNeg  % 9));
+    System.out.println("Run digitSum method: " + digitSum(noNeg));
+    System.out.println("Divide digitSum by 9 to get a remainder of " + digitSum(noNeg) % 9);
 
   }
 

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class CheckTest {
 
 
-  static final int[] INPUT = {4046, 6325, 9788, 5676, 88, 8925, 8598, 2025, 4738, 453};
+  static final int[] INPUT = {4046, 6325, 9788, 5676, -88, 8925, 8598, -2025, 4738, 453};
   static final int[] EXPECTED = {14, 16, 32, 24, 16, 24, 30, 9, 22, 12};
 
 

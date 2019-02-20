@@ -25,9 +25,9 @@ public class Check {
     int var = scanner.nextInt();
     Check.digitSum(var);
     System.out.println("Enter number: " + var);
-    System.out.println("Divide input by 9: " + (var /9));
+    System.out.println("Divide by 9 to get a remainder of " + (var  % 9));
     System.out.println("Run digitSum method: " + digitSum(var));
-    System.out.println("Divide digitSum method by 9: " + digitSum(var) / 9);
+    System.out.println("Divide digitSum by 9 to get a remainder of " + digitSum(var) % 9);
 
   }
 
